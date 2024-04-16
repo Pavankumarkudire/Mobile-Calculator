@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
+
+</head>
+
+<body>
+
+    <div class="Calculator">
+        <div>
+            <input type="test" id="test" placeholder="0" disabled>
+        </div>
+
+        <div class="Buttons" style="display: none;">
+            <button onclick="submitButton('sin')">sin</button>
+            <button onclick="submitButton('cos')">cos</button>
+            <button onclick="submitButton('tan')">tan</button>
+            <button onclick="submitButton('log')">log</button>
+            <button onclick="submitButton('In')">In</button>
+
+            <button onclick="submitButton('&#40')">&#40;</button>
+            <button onclick="submitButton('&#41')">&#41;</button>
+            <button onclick="submitButton('&#8896')">&#8896;</button>
+            <button onclick="submitButton('&#8730')">&#8730;</button>
+            <button onclick="submitButton('!')">!</button>
+
+            <button onclick="submitButton('&#8719')">&#8719;</button>
+            <button onclick="submitButton('&#8337')">&#8337;</button>
+            <button onclick="submitButton('INV')">INV</button>
+            <button onclick="submitButton('RAD')">RAD</button>
+            <button onclick="submitButton('DEG')">DEG</button>
+
+        </div>
+        <div class="CalButton">
+            <button id="ButtonClick" class="ButtonClick" onclick="displayButton()"></button>
+            <div class="Button">
+                <!-- clearButton -->
+                <button onclick="ClearButton('&#67')">&#67;</button>
+                <button onclick="submitButton('&#37')">&#37;</button>
+                <button onclick="deleteButton('Del')">Del</button>
+                <button onclick="submitButton('&#47')">&#47;</button>
+
+                <!-- numbers -->
+                <button onclick="submitButton('7')">7</button>
+                <button onclick="submitButton('8')">8</button>
+                <button onclick="submitButton('9')">9</button>
+                <!-- operators -->
+                <button onclick="submitButton('&#42')">&#42;</button>
+
+                <!-- numbers -->
+                <button onclick="submitButton('4')">4</button>
+                <button onclick="submitButton('5')">5</button>
+                <button onclick="submitButton('6')">6</button>
+                <button onclick="submitButton('&#45')">&#45;</button>
+                <!-- numbers -->
+                <button onclick="submitButton('1')">1</button>
+                <button onclick="submitButton('2')">2</button>
+                <button onclick="submitButton('3')">3</button>
+                <button onclick="submitButton('&#43')">&#43;</button>
+
+                <button onclick="submitButton('00')">00</button>
+                <button onclick="submitButton('0')">0</button>
+                <button onclick="submitButton('&#46')">&#46;</button>
+                <!-- Equalator -->
+                <button onclick="Equalator('&#61')">&#61;</button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

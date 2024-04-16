@@ -1,0 +1,164 @@
+
+
+.Calculator{
+    width: 15rem;
+    margin: 2% auto;
+    border: 3px solid #4b4b4b;
+    box-shadow: 0px 0px 3px 1px #555557;
+
+}
+
+#test{
+    background-color: aliceblue;
+    pointer-events: none;
+    height: 40px;
+    width: 97%;
+}
+
+.CalButton{
+    background-color: #505052;
+    border: 2px solid rgb(86, 86, 87);
+
+}
+.Button{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+.Button button{
+    background-color: #505053;
+    height: 50px;
+    color: aliceblue;
+
+}
+.Button button:hover{
+    background-color: #1d1c1c;
+}
+
+.ButtonClick{
+    /* height: 10px; */
+    padding: 5px 12px;
+    border: none;
+    outline: none;
+    background-color: rgb(109, 109, 110);
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    margin-left: 40%;
+    animation: animation 0.4s ease-in-out;
+}
+
+
+
+
+.Buttons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgb(139, 137, 137);
+    justify-content: center;
+    align-items: center;
+}
+.Buttons button{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 44px;
+    height: 40px;
+    margin: 0px; 
+    
+}
+.Buttons.animated button {
+    animation: animation 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 320px) and (max-width: 370px) {
+    .Calculator{
+        width: 15rem;
+        margin: 2% auto;
+        border: 3px solid #4b4b4b;
+        box-shadow: 0px 0px 3px 1px #555557;
+    
+    }
+    
+    #test{
+        background-color: aliceblue;
+        pointer-events: none;
+        height: 40px;
+        width: 97%;
+    }
+    
+    .CalButton{
+        background-color: #505052;
+        border: 2px solid rgb(86, 86, 87);
+    
+    }
+    .Button{
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+    }
+    .Button button{
+        background-color: #505053;
+        height: 50px;
+        color: aliceblue;
+    
+    }
+    .Button button:hover{
+        background-color: #1d1c1c;
+    }
+    
+    .ButtonClick{
+        /* height: 10px; */
+        padding: 5px 12px;
+        border: none;
+        outline: none;
+        background-color: rgb(109, 109, 110);
+        display: flex;
+        justify-content: center;
+        width: 30px;
+        margin-left: 40%;
+        animation: animation 0.4s ease-in-out;
+    }
+    
+    
+    
+    
+    .Buttons{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        background-color: rgb(139, 137, 137);
+        justify-content: center;
+        align-items: center;
+    }
+    .Buttons button{
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        outline: none;
+        width: 44px;
+        height: 40px;
+        margin: 0px; 
+        
+    }
+    .Buttons.animated button {
+        animation: animation 0.3s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 371px) and (max-width: 1020px) and (orientation: landscape) {
+    /* Styles for landscape orientation of medium to large screens */
+
+    .Calculator {
+        display: grid;
+        grid-template-columns: auto 1fr; /* Adjust the column layout */
+        gap: 10px;
+    }
+
+    .CalButton {
+        order: 1; /* Adjust the order of the .CalButton to the first column */
+    }
+
+    .Buttons {
+        display: block; /* Change the display to block to stack buttons vertically */
+    }
+}
+
